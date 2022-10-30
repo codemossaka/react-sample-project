@@ -1,10 +1,9 @@
-import TableComponent from "../../components/admin/TableComponent";
-import {Data} from "../../model/Data";
+import TableComponent from "../../../components/admin/TableComponent";
+import {Data} from "../../../model/Data";
 
+const Testimony = () => {
+    const data = [new Data(1, "Dfhgf gaerh wer"," aeegar gher hrffjbvhf",true, true, 1)]
 
-const Worship = () => {
-
-    const data = [new Data(1, "Dfhgf feg","ffjbvhf gsegrrt",true, true, 1)]
     return (
         <>
             <h4 className="text-2xl mt-4">Свидетельства</h4>
@@ -12,11 +11,12 @@ const Worship = () => {
                 Добавить запись
             </button>
             <div className="w-full">
-                <TableComponent data={data}/>
+                <TableComponent data={data} />
             </div>
         </>
     )
 }
 
 
-export default Worship;
+
+export default Testimony;

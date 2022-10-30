@@ -1,5 +1,5 @@
-import TableComponent from "../../components/admin/TableComponent";
-import {Data} from "../../model/Data";
+import TableComponent from "../../../components/admin/TableComponent";
+import {Data} from "../../../model/Data";
 
 const Audio = () => {
 
@@ -7,7 +7,6 @@ const Audio = () => {
 
     return (
         <>
-            fbnlgaerklugluerag
             <h4 className="text-2xl mt-4">Аудио</h4>
             <button className="my-4 border p-1 shadow text-white rounded-[6px] bg-green-700">
                 Добавить запись
@@ -15,7 +14,6 @@ const Audio = () => {
             <div className="w-full">
                 <TableComponent data={data}/>
             </div>
-            fgiufgduhigoirenliugreiulgreiub
         </>
     )
 }

@@ -1,5 +1,5 @@
-import TableComponent from "../../components/admin/TableComponent";
-import {Data} from "../../model/Data";
+import TableComponent from "../../../components/admin/TableComponent";
+import {Data} from "../../../model/Data";
 
 const Video = () => {
     const data = [new Data(1, "Dfhgf  sghshrth"," gshrrt h rtffjbvhf",true, true, 1)]

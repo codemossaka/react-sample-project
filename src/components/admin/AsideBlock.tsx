@@ -1,39 +1,48 @@
 import {Link} from "react-router-dom";
-
+import {FaBeer} from "react-icons/all";
+import {BiAddToQueue} from "react-icons/bi";
 const AsideBlock = () => {
 
     const menus = [
         {
             name: "Рабочий стол",
-            link: "/"
+            link: "/",
+            icon:  <FaBeer />
         },
         {
             name: "Свидетельства",
-            link: "/testimony"
+            link: "/testimony",
+            icon:  <FaBeer />
         },
         {
             name: "Дневник",
-            link: "/journal"
+            link: "/journal",
+            icon:  <FaBeer />
         },
         {
             name: "Поклонение",
-            link: "/worship"
+            link: "/worship",
+            icon:  <FaBeer />
         },
         {
             name: "Аудио",
-            link: "/audio"
+            link: "/audio",
+            icon:  <FaBeer />
         },
         {
             name: "Видео",
-            link: "/video"
+            link: "/video",
+            icon:  <FaBeer />
         },
         {
             name: "Трансляция",
-            link: "/stream"
+            link: "/stream",
+            icon:  <FaBeer />
         },
         {
             name: "Пользователи",
-            link: "/users"
+            link: "/users",
+            icon:  <FaBeer />
         }];
 
 
@@ -43,7 +52,10 @@ const AsideBlock = () => {
                 {
                     menus.map((menu, index) =>
                         <Link to={menu.link}  key={index} >
-                            <li className="p-3 border-b cursor-pointer">{menu.name}</li>
+                            <li className="p-3 border-b cursor-pointer flex items-center hover:bg-gray-200">
+                                <span className="pr-2">{menu.icon}</span>
+                                <span>{menu.name}</span>
+                            </li>
                         </Link>
                     )
                 }

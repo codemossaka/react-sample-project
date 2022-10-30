@@ -4,9 +4,10 @@ import {Component} from "react";
 type  Header = {
     data: Array<Data>
 }
+
 class TableComponent extends Component<Header, any> {
 
-    private _name:string;
+    private _name: string;
 
     constructor(props: Header, context: any, name: string) {
         super(props, context);
@@ -54,9 +55,9 @@ class TableComponent extends Component<Header, any> {
                             <td className="">{ct.id}</td>
                             <td className="">{ct.date}</td>
                             <td className="">{ct.name}</td>
-                            <td className="">{ct.archive}</td>
-                            <td className="">{ct.active}</td>
-                            <td className="">{ct.sort}</td>
+                            <td className="">{ct.archive ? '1' : '0'}</td>
+                            <td className="">{ct.active ? '1' : '0'}</td>
+                            <td className=""><input type="number" className="border border-black rounded w-10"/></td>
                             {/*<td className="">{ct.action}</td>*/}
                         </tr>
                     )

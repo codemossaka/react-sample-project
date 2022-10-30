@@ -7,7 +7,6 @@ import AsideBlock from "../components/admin/AsideBlock";
 
 export default class AdminLayout extends Component<any, any> {
 
-
     render() {
         return (
             <div className="h-screen w-full flex-col">

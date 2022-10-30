@@ -1,5 +1,5 @@
-import TableComponent from "../../components/admin/TableComponent";
-import {Data} from "../../model/Data";
+import TableComponent from "../../../components/admin/TableComponent";
+import {Data} from "../../../model/Data";
 
 const Stream = () => {
     const data = [new Data(1, "Dfhg wh rwh hgf","ffjbvhf  wesrhrt",true, true, 1)]
